@@ -1,0 +1,14 @@
+import java.sql.Date;
+
+public class ChatMessage {
+	public String timestamp;
+	public String content;
+	
+	
+	@SuppressWarnings("deprecation")
+	public ChatMessage(Date time , String con)
+	{
+		timestamp = time.toGMTString();
+		content = con;
+	}
+}

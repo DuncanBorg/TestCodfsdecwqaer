@@ -1,11 +1,14 @@
+import java.util.Date;
 
 public class ChatMessage {
 	public String timestamp;
 	public String content;
 	
-	public void ChatMessage(String time , String con)
+	
+	@SuppressWarnings("deprecation")
+	public ChatMessage(Date date , String con)
 	{
-		timestamp = time;
+		timestamp = date.toGMTString();
 		content = con;
 	}
 }

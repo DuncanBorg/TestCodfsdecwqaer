@@ -1,0 +1,9 @@
+
+public Enum Users {
+	
+	public int id;
+	public String username;
+	public String pass;
+	public String provider;
+	
+}

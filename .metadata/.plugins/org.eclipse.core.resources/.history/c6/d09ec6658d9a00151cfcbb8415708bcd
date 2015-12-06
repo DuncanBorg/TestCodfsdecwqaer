@@ -1,0 +1,8 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ChatSession {
+	public List<ChatMessage> recievedMessages = new ArrayList<ChatMessage>();
+	public boolean parentalBlock = false;
+
+}
