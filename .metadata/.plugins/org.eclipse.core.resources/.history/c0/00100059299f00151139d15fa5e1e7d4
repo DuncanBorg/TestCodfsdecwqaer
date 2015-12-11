@@ -1,0 +1,67 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ChatProviders{
+
+	List<Users> users = new ArrayList<Users>();
+	public String CurrentProvider =  "";
+	
+	public ChatProviders(String username, String password) {
+		// TODO Auto-generated method stub
+		for(Users user : users)
+        {
+			if(user.username.equals(username))
+			{
+				if(user.password.equals(password))
+				{
+					CurrentProvider = user.Provider;
+				}
+			}
+		}
+		
+	}
+
+	
+	public int getMaxMessageLength() {
+		if(CurrentProvider == "Facebook")
+		{
+			return 20;
+		}
+		if(CurrentProvider == "Skype")
+		{
+			return 15;
+		}if(CurrentProvider == "Twitter")
+		{
+			return 5;
+		}
+		
+	}
+
+
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	public int sendMessageTo(String friendID, String msg) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	public int onMessageRecived(String text) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void getUserData() {
+		users.add(new Users("FbTest1","password",1,"Facebook"));
+		users.add(new Users("FbTest2","password",2,"Facebook"));
+		users.add(new Users("SkypeTest1","password",2,"Skype"));
+		users.add(new Users("SkypeTest1","password",3,"Skype"));
+		users.add(new Users("TwitterTest1","password",4,"Twitter"));
+		
+	}
+
+}

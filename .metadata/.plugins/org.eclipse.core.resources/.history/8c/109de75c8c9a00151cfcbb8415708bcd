@@ -1,4 +1,0 @@
-
-public interface LogIn {
-	int log(String username , String password);
-}
