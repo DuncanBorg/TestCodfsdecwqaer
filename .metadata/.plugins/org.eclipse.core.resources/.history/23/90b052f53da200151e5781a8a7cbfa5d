@@ -24,7 +24,8 @@ public class ChatSession {
 		
 		if(loginStatus == 0)
 		{
-			p = new ChatProviders(username, password);		
+			p = new ChatProviders(username, password);
+			
 		}
 		else
 		{
