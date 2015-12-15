@@ -1,7 +1,6 @@
 package JUnitTests;
 
 import Chat.*;
-//import org.junit.Assert.*;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
@@ -28,6 +27,7 @@ public class LoginTest {
 	public void testInvalid()
 	{
 		Login login = new Login();
+		System.out.println(login.Login("bad", "bad"));
 		assertEquals("1", ""+login.Login("bad", "bad"));
 	}
 	
