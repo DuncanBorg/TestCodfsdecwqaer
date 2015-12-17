@@ -29,9 +29,9 @@ public class Login {
 		users.add(new Users("FbTest1","password",1,"Facebook","out"));
 		users.add(new Users("FbTest2","password",2,"Facebook","in"));
 		users.add(new Users("FbTest3","password",3,"Facebook","out"));
-		users.add(new Users("SkypeTest1","password",2,"Skype","in"));
-		users.add(new Users("SkypeTest1","password",3,"Skype","out"));
-		users.add(new Users("TwitterTest1","password",4,"Twitter","out"));
+		users.add(new Users("SkypeTest1","password",4,"Skype","in"));
+		users.add(new Users("SkypeTest1","password",5,"Skype","out"));
+		users.add(new Users("TwitterTest1","password",6,"Twitter","out"));
 		
 	}
 }
