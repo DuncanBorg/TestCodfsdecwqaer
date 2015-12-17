@@ -1,9 +1,11 @@
+package Chat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Login {
 	List<Users> users = new  ArrayList<Users>();
-	public int Login(String username , String password)
+	
+	public int Login(String username, String password)
 	{
 		getUserData();
 		try {
@@ -23,6 +25,7 @@ public class Login {
 		return 1;
 	}
 	public void getUserData() {
+		users = new  ArrayList<Users>();
 		users.add(new Users("FbTest1","password",1,"Facebook","out"));
 		users.add(new Users("FbTest2","password",2,"Facebook","in"));
 		users.add(new Users("FbTest3","password",3,"Facebook","out"));

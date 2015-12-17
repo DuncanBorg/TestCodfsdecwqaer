@@ -1,3 +1,4 @@
+package Chat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -10,42 +11,55 @@ public class ChatSession {
 	String friendIDcon = "";
 	String validFriend = "2";
 	
+	//created empty constructor to call from other class without parameters - manahsibx li qed jintuza
+	public ChatSession()
+	{
+		
+	}
+	
 	public ChatSession(ChatProviders provider)
 	{
 		recievedMessages = new ArrayList<ChatMessage>();
 		parentalBlock = false;
-		
 	}
+	
 	public int initSession(String username , String password, String friendID)
 	{
 		//log in 
 		Login l = new Login();
 		int loginStatus = l.Login(username, password);
 		
+		//success
 		if(loginStatus == 0)
 		{
 			p = new ChatProviders(username, password);		
 		}
-		else
+		
+		else //invalid
 		{
 			return 1;
 		}
-		if(p.getName() == "")
+		
+		if(p.getName() == "") //empty?
 		{
-			return 2;
-		}else
+			return 2; 
+		}
+		
+		else //anything else ?
 		{
 			friendIDcon = friendID;
 			return 0;
 		}
-		
 	}
 	
 	public int sendMessage(String text)
 	{
-	
+		//Duncan:
 		//invalid friend 5
 		//fix this shit !
+		
+		//Jean:
+		//heqelmedenne ok ux
 		
 		
 		if((text.length()) >(p.getMaxMessageLength()))

@@ -1,3 +1,4 @@
+package Chat;
 
 public class Users {
 	public String username;
