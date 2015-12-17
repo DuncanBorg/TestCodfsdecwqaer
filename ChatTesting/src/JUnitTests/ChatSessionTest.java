@@ -1,10 +1,10 @@
 package JUnitTests;
 
 import Chat.*;
-import static org.junit.Assert.*;
+import org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
-import static org.mo //want to import mockito
+import org.mockito.*;
 
 import java.awt.List;
 
