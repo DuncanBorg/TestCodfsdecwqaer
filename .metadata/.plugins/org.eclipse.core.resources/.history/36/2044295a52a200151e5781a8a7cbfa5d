@@ -34,7 +34,7 @@ public class ChatProviders{
 			return 5;
 		}
 		else{
-			return 0;
+			return 10000;
 		}
 		
 	}
@@ -76,7 +76,9 @@ public class ChatProviders{
 				String tempid = user.id +"" ;
 				if(tempid.equals(friend))
 				{
-					return true;				
+				
+					return true;
+					
 				}
 			}
 		}
@@ -88,9 +90,9 @@ public class ChatProviders{
 		users.add(new Users("FbTest1","password",1,"Facebook","out"));
 		users.add(new Users("FbTest2","password",2,"Facebook","in"));
 		users.add(new Users("FbTest3","password",3,"Facebook","out"));
-		users.add(new Users("SkypeTest1","password",4,"Skype","in"));
-		users.add(new Users("SkypeTest1","password",5,"Skype","out"));
-		users.add(new Users("TwitterTest1","password",6,"Twitter","out"));
+		users.add(new Users("SkypeTest1","password",2,"Skype","in"));
+		users.add(new Users("SkypeTest1","password",3,"Skype","out"));
+		users.add(new Users("TwitterTest1","password",4,"Twitter","out"));
 		
 	}
 

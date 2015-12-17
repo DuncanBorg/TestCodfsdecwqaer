@@ -23,11 +23,12 @@ public class Login {
 		return 1;
 	}
 	public void getUserData() {
-		users.add(new Users("FbTest1","password",1,"Facebook"));
-		users.add(new Users("FbTest2","password",2,"Facebook"));
-		users.add(new Users("SkypeTest1","password",2,"Skype"));
-		users.add(new Users("SkypeTest1","password",3,"Skype"));
-		users.add(new Users("TwitterTest1","password",4,"Twitter"));
+		users.add(new Users("FbTest1","password",1,"Facebook","out"));
+		users.add(new Users("FbTest2","password",2,"Facebook","in"));
+		users.add(new Users("FbTest3","password",3,"Facebook","out"));
+		users.add(new Users("SkypeTest1","password",2,"Skype","in"));
+		users.add(new Users("SkypeTest1","password",3,"Skype","out"));
+		users.add(new Users("TwitterTest1","password",4,"Twitter","out"));
 		
 	}
 }
